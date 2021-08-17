@@ -17276,7 +17276,6 @@ body::-webkit-scrollbar-track, .modal-body::-webkit-scrollbar-track {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  width: 350px !important;
   background: #fff;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -17288,14 +17287,6 @@ body::-webkit-scrollbar-track, .modal-body::-webkit-scrollbar-track {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 768px) {
