@@ -1,0 +1,71 @@
+.timeline-section {
+	position: relative;
+    margin: 20px 0 ;
+}
+.timeline-section::after {
+	content:"";
+	position: absolute;
+    top: -10px;
+	left: 0;    
+	right: 0;
+	height: 3px; 
+	background-color: $secondary;
+    z-index: 1;
+}
+//用來擋多出來的線
+.blockline{
+    position: relative;
+}
+.blockline::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: $white;
+    z-index: 2;
+}
+//有實心
+.timeline-pointer-dot{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.timeline-pointer-dot::before {
+	content:"";
+	position: absolute;
+    top: -10px;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+  border: 1px solid $secondary;
+	transform: translate(-50%,-25%);
+	background-color: $secondary;
+}
+//沒有實心
+.timeline-pointer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .timeline-pointer::before {
+      content:"";
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+     border: 1px solid $secondary;
+      transform: translate(-50%,-25%);
+      background-color: $white;
+      z-index: 2;
+  }
+//+-hover,focus效果
+.number_chose{
+    &:hover,&:focus{
+        color: $secondary;
+    }
+}

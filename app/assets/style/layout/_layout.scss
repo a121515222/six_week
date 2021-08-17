@@ -1,0 +1,73 @@
+.focus-clean{
+    &:focus{
+        box-shadow: none;
+    }
+}
+.btn-outline-light{
+    background: rgba(0,0,0,0);
+}
+.banner{
+    height: 480px;
+    width: 100%;
+    
+}
+.nav-scroller {
+    height: 3.25rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden; 
+    border-bottom: 1px solid $gray_custom;
+    .nav-link{
+        font-size: $h7-font-size;
+        color: $gray_custom;
+        &:hover,&:focus{
+            color: $secondary;
+            box-shadow: inset 0 -1px 0 $secondary;
+        }
+    }
+}
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.footer_banner{
+    height: 400px;
+    width: 100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    width: 350px !important;
+    background: #fff;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }

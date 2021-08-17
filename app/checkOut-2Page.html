@@ -1,0 +1,137 @@
+---
+title: checkOut-2Page
+layout: ./app/layout.ejs
+engine: ejs
+current: checkOut-2Page
+---
+<div class="checkOut-2Page">
+    <div class="container-lg">
+        <div class="row timeline-section ">
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer-dot">
+              <p >確認訂單</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer-dot">
+              <p class="fw-bold">填寫訂購資訊</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer">
+              <p>填寫付款資訊</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer">
+              <p>完成訂購</p>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-lg-4  blockline" style="height: 10px;">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 order-0 offset-md-2 col-md-4 order-md-1">
+                <form class="d-flex flex-column" action="">
+                    <h9 class="fw-bold mb-7 mb-md-9">訂購人資訊</h9>
+                    <label class="mb-9" for="emailID">Email<input class="mt-1" id="emailID" placeholder="example@gmail.com" type="text" style="width: 100%;"></label>
+                    <label class="mb-9" for="nameID">姓名<input id="nameID" class="mt-1" placeholder="請輸入姓名" type="text" style="width: 100%;"></label>
+                    <label class="mb-9" for="telID">聯絡電話<input id="telID" class="mt-1" placeholder="請輸入電話" type="text" style="width: 100%;"></label>
+                    <label class="mb-1" for="couponID">優惠碼<input id="couponID" class="mt-1" placeholder="TG87526" type="text" style="width: 100%;"></label>
+                    <h8 class="text-primary align-self-end mb-1">優惠碼已生效</h8>
+                </form>
+                <div class="d-flex justify-content-between mt-18 mb-1 mb-md-2">
+                    <h7 class="fw-bold">小計</h7>
+                    <span class="h7">NT$1000</span>
+                </div>
+                <div class="d-flex justify-content-between  mb-3 mb-md-2">
+                    <h7 class="fw-bold">折扣</h7>
+                    <span class="h7">-NT$50</span>
+                </div>  
+                <div class="d-flex justify-content-between   mb-11 mb-md-5">
+                    <h5 class="fw-bold">總金額</h5>
+                    <span class="h7 fw-bold" >NT$1000</span>
+                </div>   
+
+            </div>
+            <ul class="col-12 order-1 col-md-6 order-md-0">
+                <li class="card mb-9">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ratio ratio-2x1"><img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="picture"></div>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex flex-column justify-content-between">
+                            <h7 class="fw-bold  ">2020 台味設計展</h7>
+                            <h7>01 JUN — 31 OCT</h7>
+                            <div class="d-flex justify-content-between align-tiems-center">
+                                <div class="d-flex">
+                                    <span class="h7 text-gray_custom">全票</span>
+                                        <h5 class="d-block d-md-none fw-bold">01</h5>
+                                </div>
+                                <span class="h5 fw-bold d-block d-md-none">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-md-flex justify-content-between align-items-center col-md-4">
+                            <h5 class="fw-bold">NT$350</h5>
+                            <h5 class="fw-bold">01</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="card mb-9">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ratio ratio-2x1"><img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="picture"></div>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex flex-column justify-content-between">
+                            <h7 class="fw-bold  ">2020 台味設計展</h7>
+                            <h7>01 JUN — 31 OCT</h7>
+                            <div class="d-flex justify-content-between align-tiems-center">
+                                <div class="d-flex">
+                                    <span class="h7 text-gray_custom">全票</span>
+                                        <h5 class="d-block d-md-none fw-bold">01</h5>
+                                </div>
+                                <span class="h5 fw-bold d-block d-md-none">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-md-flex justify-content-between align-items-center col-md-4">
+                            <h5 class="fw-bold">NT$350</h5>
+                            <h5 class="fw-bold">01</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="card mb-9">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ratio ratio-2x1"><img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="picture"></div>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex flex-column justify-content-between">
+                            <h7 class="fw-bold  ">2020 台味設計展</h7>
+                            <h7>01 JUN — 31 OCT</h7>
+                            <div class="d-flex justify-content-between align-tiems-center">
+                                <div class="d-flex">
+                                    <span class="h7 text-gray_custom">全票</span>
+                                        <h5 class="d-block d-md-none fw-bold">01</h5>
+                                </div>
+                                <span class="h5 fw-bold d-block d-md-none">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-md-flex justify-content-between align-items-center col-md-4">
+                            <h5 class="fw-bold">NT$350</h5>
+                            <h5 class="fw-bold">01</h5>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+
+        
+        <div class="row">
+            <div class=" col-6 mb-16 mt-12 col-md-2 mt-md-0">
+                <a href="./checkOut-1Page.html" class="btn btn-outline-primary" role="button" style="width: 100%;">返回</a>
+            </div>
+            <div class=" col-6 mb-16 mt-12 offset-md-6 col-md-4 mt-md-0">
+                <a href="./checkOut-3Page.html" class="btn btn-secondary" role="button" style="width: 100%;">下一步</a>
+            </div>
+        </div>
+      </div>
+</div>
