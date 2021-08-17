@@ -15,25 +15,41 @@
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 <body>
-    
+    <!--EXHIBINECTION-->
     <div class="header">
       <div class="border">
         <div class=" container-md ">
-                <div class="d-flex justify-content-center align-items-center position-relative  pt-9 pb-9 pt-md-12 pb-md-12">
-                    <a class="d-block"href="homePage.html"><div class="h3-md h4 ">EXHIBINECTION</div></a>
-                    
-                    <div class="linker d-flex  align-items-center gap-14 position-absolute top-50 end-0 translate-middle-y">
-                        <a class="h7 d-none d-sm-block text-gray_custom" href="#">Signin</a>
-                        <a class="h7 d-none d-sm-block text-gray_custom" href="#">Signup</a>
-                        <button type="button" class="btn btn-white focus-clean position-relative px-0 py-1"data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                          <span class="material-icons">confirmation_number</span><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">3<span class="visually-hidden">unread messages</span></span>
-                         </button>
-                    </div>
+              <!--navbar1-->
+              <nav class="navbar navbar-expand-md navbar-light bg-white  border">
+                <div class="container-fluid">
+                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a class="navbar-brand position-md-absolute top-50 start-50 translate-md-middle" href="homePage.html"> <h1 class="h4 text-primary">EXHIBINECTION</h1></a>
+                  <a class="nav-link position-relative link-dark order-md-3" href="./checkOut-1Page.html"  aria-current="page">
+                    <span class="material-icons ">confirmation_number</span>
+                    <span class="position-absolute top-20 start-80 translate-middle badge rounded-pill bg-secondary">3<span class="visually-hidden">unread messages</span></span>
+                  </a>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 d-flex justify-content-md-end">
+                      <li class="nav-item">
+                        <a class="nav-link active h7 text-gray_custom" aria-current="page" href="#">Signin</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active h7 text-gray_custom" aria-current="page" href="#">Signup</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+              </nav>
         </div>
       </div>
-            <div class="banner d-flex  align-items-end align-items-md-center" style="background:url(./assets/images/banner.jpg) center no-repeat; background-size:cover;" >
-    <div class="container-md  ">
+            
+
+<!--台北當代藝術展-->
+<div class="banner d-flex  align-items-end align-items-md-center d-none" style="background:url(./assets/images/banner.jpg) center no-repeat; background-size:cover;" >
+    <div class="container-md ">
       <div class="row">
           <h1 class="fw-bold h1 pb-3 text-white offset-0 col-9 offset-md-1 col-md-6" >台北當代藝術展</h1>
       </div>
@@ -47,6 +63,7 @@
        </div>
     </div>
   </div>
+            <!--navbar-2-->
             <div class="nav-scroller d-flex align-items-center mb-0 mb-md-16">
               <nav class="container nav d-flex justify-content-center" aria-label="Secondary navigation">
                 <a class="nav-link active" aria-current="page" href="#">音樂</a>
@@ -60,10 +77,6 @@
                 <a class="nav-link" href="./productDetailPage.html">期間限定</a>
               </nav>
             </div>
-
-    
-        
-        
         <div class="checkOut-3Page">
     <div class="container-lg">
         <div class="row timeline-section ">
@@ -193,10 +206,9 @@
         </div>
       </div>
 </div>
-        
-        
         <div class="footer">
-          <div class="container-md">
+          <!--猜你也喜歡-->
+          <div class="container-md d-none">
               <div class="row">
                 <div class="h1 fw-bold col-9 pb-11 pt-0 col-sm-6 pt-md-15 col-md-4">
                     猜你也喜歡...
@@ -240,15 +252,13 @@
                         </div>
                       </a>
                     </div>
-                      
-                      
-                    
                       <div class="swiper-pagination-hidden"></div>
                 </div>
                 </div>
             </div>
           </div>
-          <div class="footer_banner d-flex flex-column justify-content-end" style="background: url(./assets/images/footer_banner.jpg) center;background-size: cover;">
+          <!--想收到最新消息嗎?-->
+          <div class="footer_banner d-flex flex-column justify-content-end d-none" style="background: url(./assets/images/footer_banner.jpg) center;background-size: cover;">
               <div class="container-md ">
                   <div class="row pb-md-10 pb-lg-5">
                     <div class="h1 text-white col-12">
@@ -268,6 +278,7 @@
                 </div>
               </div>
           </div>
+          <!--footer底部bar-->
           <div class="container-md position-relative">
             <div class="d-flex justify-content-between  py-7 py-md-12">
               <div class="fromGroup d-flex align-items-center gap-7">
