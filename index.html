@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
+    <title>Boostrap Index</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
@@ -32,7 +32,21 @@
                 </div>
         </div>
       </div>
-            <%- include('banner.ejs') %>
+            <div class="banner d-flex  align-items-end align-items-md-center" style="background:url(./assets/images/banner.jpg) center no-repeat; background-size:cover;" >
+    <div class="container-md  ">
+      <div class="row">
+          <h1 class="fw-bold h1 pb-3 text-white offset-0 col-9 offset-md-1 col-md-6" >台北當代藝術展</h1>
+      </div>
+      <div class="row">    
+          <h2 class="h5 text-white pb-7 offset-0 col-6 offset-md-1 col-md-5">01 JUN - 31 OCT</h2>
+     </div>
+        <div class="row mb-16 mb-md-0">
+          <div class=" fromGroup d-flex gap-3 offset-0 col-12 mb-16 col-sm-10 mb-md-0 offset-md-1 col-md-8 col-lg-6 ">
+            <button class="btn btn-secondary px-17 py-4 ">購買票券</button><button class="btn btn-outline-light px-17 py-4 ">詳細資訊</button>
+          </div>
+       </div>
+    </div>
+  </div>
             <div class="nav-scroller d-flex align-items-center mb-0 mb-md-16">
               <nav class="container nav d-flex justify-content-center" aria-label="Secondary navigation">
                 <a class="nav-link active" aria-current="page" href="#">音樂</a>
@@ -50,7 +64,61 @@
     
         
         
-        <%- contents %>
+        
+<div class="container">
+  <h1 class="index__h1">這是一段話</h1>
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+    <a href="homePage.html">home</a>
+  </div>
+  <div class="alert alert-secondary" role="alert">
+    A simple secondary alert—check it out!
+  </div>
+  <div class="alert alert-success" role="alert">
+    A simple success alert—check it out!
+  </div>
+  <div class="alert alert-danger" role="alert">
+    A simple danger alert—check it out!
+  </div>
+  <div class="alert alert-warning" role="alert">
+    A simple warning alert—check it out!
+  </div>
+  <div class="alert alert-info" role="alert">
+    A simple info alert—check it out!
+  </div>
+  <div class="alert alert-light" role="alert">
+    A simple light alert—check it out!
+  </div>
+  <div class="alert alert-dark" role="alert">
+    A simple dark alert—check it out!
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-pink" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
         
         
         <div class="footer">

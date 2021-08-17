@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkOut-2Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+<body>
+    
+    <div class="header">
+      <div class="border">
+        <div class=" container-md ">
+                <div class="d-flex justify-content-center align-items-center position-relative  pt-9 pb-9 pt-md-12 pb-md-12">
+                    <a class="d-block"href="homePage.html"><div class="h3-md h4 ">EXHIBINECTION</div></a>
+                    
+                    <div class="linker d-flex  align-items-center gap-14 position-absolute top-50 end-0 translate-middle-y">
+                        <a class="h7 d-none d-sm-block text-gray_custom" href="#">Signin</a>
+                        <a class="h7 d-none d-sm-block text-gray_custom" href="#">Signup</a>
+                        <button type="button" class="btn btn-white focus-clean position-relative px-0 py-1"data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <span class="material-icons">confirmation_number</span><span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">3<span class="visually-hidden">unread messages</span></span>
+                         </button>
+                    </div>
+                </div>
+        </div>
+      </div>
+            <div class="banner d-flex  align-items-end align-items-md-center" style="background:url(./assets/images/banner.jpg) center no-repeat; background-size:cover;" >
+    <div class="container-md  ">
+      <div class="row">
+          <h1 class="fw-bold h1 pb-3 text-white offset-0 col-9 offset-md-1 col-md-6" >台北當代藝術展</h1>
+      </div>
+      <div class="row">    
+          <h2 class="h5 text-white pb-7 offset-0 col-6 offset-md-1 col-md-5">01 JUN - 31 OCT</h2>
+     </div>
+        <div class="row mb-16 mb-md-0">
+          <div class=" fromGroup d-flex gap-3 offset-0 col-12 mb-16 col-sm-10 mb-md-0 offset-md-1 col-md-8 col-lg-6 ">
+            <button class="btn btn-secondary px-17 py-4 ">購買票券</button><button class="btn btn-outline-light px-17 py-4 ">詳細資訊</button>
+          </div>
+       </div>
+    </div>
+  </div>
+            <div class="nav-scroller d-flex align-items-center mb-0 mb-md-16">
+              <nav class="container nav d-flex justify-content-center" aria-label="Secondary navigation">
+                <a class="nav-link active" aria-current="page" href="#">音樂</a>
+                <a class="nav-link" href="#">戲劇</a>
+                <a class="nav-link" href="./productPage.html">設計</a>
+                <a class="nav-link" href="#">藝術</a>
+                <a class="nav-link" href="#">美食</a>
+                <a class="nav-link" href="#">旅遊</a>
+                <a class="nav-link" href="#">電影</a>
+                <a class="nav-link" href="#">親子</a>
+                <a class="nav-link" href="./productDetailPage.html">期間限定</a>
+              </nav>
+            </div>
+
+    
+        
+        
+        <div class="checkOut-2Page">
+    <div class="container-lg">
+        <div class="row timeline-section ">
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer-dot">
+              <p >確認訂單</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer-dot">
+              <p class="fw-bold">填寫訂購資訊</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer">
+              <p>填寫付款資訊</p>
+            </div>
+          </div>
+          <div class="col-3 col-lg-2">
+            <div class="timeline-pointer">
+              <p>完成訂購</p>
+            </div>
+          </div>
+          <div class="d-none d-lg-block col-lg-4  blockline" style="height: 10px;">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12 order-0 offset-md-2 col-md-4 order-md-1">
+                <form class="d-flex flex-column" action="">
+                    <h9 class="fw-bold mb-7 mb-md-9">訂購人資訊</h9>
+                    <label class="mb-9" for="emailID">Email<input class="mt-1" id="emailID" placeholder="example@gmail.com" type="text" style="width: 100%;"></label>
+                    <label class="mb-9" for="nameID">姓名<input id="nameID" class="mt-1" placeholder="請輸入姓名" type="text" style="width: 100%;"></label>
+                    <label class="mb-9" for="telID">聯絡電話<input id="telID" class="mt-1" placeholder="請輸入電話" type="text" style="width: 100%;"></label>
+                    <label class="mb-1" for="couponID">優惠碼<input id="couponID" class="mt-1" placeholder="TG87526" type="text" style="width: 100%;"></label>
+                    <h8 class="text-primary align-self-end mb-1">優惠碼已生效</h8>
+                </form>
+                <div class="d-flex justify-content-between mt-18 mb-1 mb-md-2">
+                    <h7 class="fw-bold">小計</h7>
+                    <span class="h7">NT$1000</span>
+                </div>
+                <div class="d-flex justify-content-between  mb-3 mb-md-2">
+                    <h7 class="fw-bold">折扣</h7>
+                    <span class="h7">-NT$50</span>
+                </div>  
+                <div class="d-flex justify-content-between   mb-11 mb-md-5">
+                    <h5 class="fw-bold">總金額</h5>
+                    <span class="h7 fw-bold" >NT$1000</span>
+                </div>   
+
+            </div>
+            <ul class="col-12 order-1 col-md-6 order-md-0">
+                <li class="card mb-9">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ratio ratio-2x1"><img src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="picture"></div>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex flex-column justify-content-between">
+                            <h7 class="fw-bold  ">2020 台味設計展</h7>
+                            <h7>01 JUN — 31 OCT</h7>
+                            <div class="d-flex justify-content-between align-tiems-center">
+                                <div class="d-flex">
+                                    <span class="h7 text-gray_custom">全票</span>
+                                        <h5 class="d-block d-md-none fw-bold">01</h5>
+                                </div>
+                                <span class="h5 fw-bold d-block d-md-none">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-md-flex justify-content-between align-items-center col-md-4">
+                            <h5 class="fw-bold">NT$350</h5>
+                            <h5 class="fw-bold">01</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="card mb-9">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ratio ratio-2x1"><img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="picture"></div>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex flex-column justify-content-between">
+                            <h7 class="fw-bold  ">2020 台味設計展</h7>
+                            <h7>01 JUN — 31 OCT</h7>
+                            <div class="d-flex justify-content-between align-tiems-center">
+                                <div class="d-flex">
+                                    <span class="h7 text-gray_custom">全票</span>
+                                        <h5 class="d-block d-md-none fw-bold">01</h5>
+                                </div>
+                                <span class="h5 fw-bold d-block d-md-none">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-md-flex justify-content-between align-items-center col-md-4">
+                            <h5 class="fw-bold">NT$350</h5>
+                            <h5 class="fw-bold">01</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="card mb-9">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <div class="ratio ratio-2x1"><img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="picture"></div>
+                        </div>
+                        <div class="col-6 col-md-4 d-flex flex-column justify-content-between">
+                            <h7 class="fw-bold  ">2020 台味設計展</h7>
+                            <h7>01 JUN — 31 OCT</h7>
+                            <div class="d-flex justify-content-between align-tiems-center">
+                                <div class="d-flex">
+                                    <span class="h7 text-gray_custom">全票</span>
+                                        <h5 class="d-block d-md-none fw-bold">01</h5>
+                                </div>
+                                <span class="h5 fw-bold d-block d-md-none">NT$350</span>
+                            </div>
+                        </div>
+                        <div class="d-none d-md-block d-md-flex justify-content-between align-items-center col-md-4">
+                            <h5 class="fw-bold">NT$350</h5>
+                            <h5 class="fw-bold">01</h5>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+
+        
+        <div class="row">
+            <div class=" col-6 mb-16 mt-12 col-md-2 mt-md-0">
+                <a href="./checkOut-1Page.html" class="btn btn-outline-primary" role="button" style="width: 100%;">返回</a>
+            </div>
+            <div class=" col-6 mb-16 mt-12 offset-md-6 col-md-4 mt-md-0">
+                <a href="./checkOut-3Page.html" class="btn btn-secondary" role="button" style="width: 100%;">下一步</a>
+            </div>
+        </div>
+      </div>
+</div>
+        
+        
+        <div class="footer">
+          <div class="container-md">
+              <div class="row">
+                <div class="h1 fw-bold col-9 pb-11 pt-0 col-sm-6 pt-md-15 col-md-4">
+                    猜你也喜歡...
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-12 offset-md-1 col-md-11">
+                <div class="swiper-container mySwiper p-0 pb-md-17 ">
+                    <div class="swiper-wrapper ">
+                      <a class="swiper-slide link-dark" href="#" >
+                        <div class="card w-100">
+                          <div class="ratio ratio-1x1">
+                            <img src="./assets/images/swiper1.jpg" alt="picture">
+                          </div>
+                          <div class="carbody d-flex flex-column align-items-start">
+                            <h5 class="py-1">No.22 線上設計展</h5>
+                            <span class="pb-5">$350</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="swiper-slide  link-dark" href="#" >
+                        <div class="card w-100">
+                          <div class="ratio ratio-1x1">
+                            <img src="./assets/images/swiper2.jpg" alt="picture">
+                          </div>
+                          <div class="carbody d-flex flex-column align-items-start">
+                            <h5 class="py-1">No.22 線上設計展</h5>
+                            <span class="pb-5">$350</span>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="swiper-slide  link-dark" href="#" >
+                        <div class="card w-100">
+                          <div class="ratio ratio-1x1">
+                            <img src="./assets/images/swiper3.jpg" alt="picture">
+                          </div>
+                          <div class="carbody d-flex flex-column align-items-start">
+                            <h5 class="py-1">No.22 線上設計展</h5>
+                            <span class="pb-5">$350</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                      
+                      
+                    
+                      <div class="swiper-pagination-hidden"></div>
+                </div>
+                </div>
+            </div>
+          </div>
+          <div class="footer_banner d-flex flex-column justify-content-end" style="background: url(./assets/images/footer_banner.jpg) center;background-size: cover;">
+              <div class="container-md ">
+                  <div class="row pb-md-10 pb-lg-5">
+                    <div class="h1 text-white col-12">
+                      想收到最新消息嗎？ 
+                    </div>
+                  <div class=" h1 text-white col-md-6 col-lg-4">
+                    快訂閱我們！
+                  </div>
+                </div>
+                <div class="row pb-15">
+                  <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class=" focus-clean btn btn-secondary px-17 py-4" type="button" id="button-addon2">訂閱</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="container-md position-relative">
+            <div class="d-flex justify-content-between  py-7 py-md-12">
+              <div class="fromGroup d-flex align-items-center gap-7">
+                <div class="  h3-md h4  mb-0">EXHIBINECTION</div>
+                <div class=" h7 ">© 2020. All Rights Reserved.</div>
+              </div>
+              <div class=" linker d-flex  align-items-center gap-14 position-absolute top-50 end-0 translate-middle-y">
+                <a class="d-inline-block h7 d-none d-sm-block text-gray_custom" href="#">Signin</a>
+                <a class="d-inline-block h7 d-none d-sm-block text-gray_custom" href="#">Signup</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    
+</body>
+</html>
+
