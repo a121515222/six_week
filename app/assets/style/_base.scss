@@ -13,11 +13,14 @@ img{
     font-family: 'Noto_CJK';
     src: url(./font-family/NotoSansCJKtc/NotoSansCJKtc-Regular.otf);
 }
-body,.modal-body{
+body{
     font-family: 'Roboto','Noto_CJK',sans-serif;
     &::-webkit-scrollbar{
         width: 10px;
     }
+}
+//body與offcancas的scrollbr
+body,.customscrollbar{
     //利用background-clip: padding-box;與border的透明調整 thumb 與 track粗細
     &::-webkit-scrollbar-track,&::-webkit-scrollbar-thumb {
 	border: 3px solid rgba(255,255,255,0);

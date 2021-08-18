@@ -8,8 +8,7 @@
 }
 .banner{
     height: 480px;
-    width: 100%;
-    
+    width: 100%;  
 }
 .nav-scroller {
     height: 3.25rem; /* 隱藏下方捲軸 */
@@ -41,13 +40,10 @@
     width: 100%;
     height: 100%;
   }
-  
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
-    
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -62,8 +58,32 @@
     -webkit-align-items: center;
     align-items: center;
   }
-  
-
+//offcanvas客製化
+.offcanvas{
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        top: 8%;
+        height: 85%;
+        max-width: 540px;
+    }
+}
+.offcanvas-footer{
+    padding: 0 15px;
+    margin-bottom: 24px;
+}
+  //結帳按鈕
+  .btn.btn-outline-primary.bg-white{
+      &:hover,&:focus{
+          color: $secondary;
+          border: 1px solid $secondary;
+      }
+  }
+  //+-hover,focus效果
+  .number_chose{
+    &:hover,&:focus{
+        color: $secondary;
+    }
+}
   @include media-breakpoint-up(md) {
     .position-md-absolute {
       position: absolute;
