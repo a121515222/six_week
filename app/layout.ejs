@@ -20,161 +20,30 @@
       <div class="border">
         <div class=" container-md ">
               <!--navbar1-->
-              <nav class="navbar navbar-expand-md navbar-light bg-white">
-                <div class="container-fluid">
-                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <a class="navbar-brand position-md-absolute top-50 start-50 translate-md-middle" href="homePage.html"> <h1 class="fs-4 fs-md-3 text-primary">EXHIBINECTION</h1></a>
-                  <a class="nav-link btn position-relative align-self-center link-dark order-md-3 " href="./checkOut-1Page.html"  aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                    <span class="material-icons ">confirmation_number</span>
-                    <span class="position-absolute top-20 start-80 translate-middle badge rounded-pill bg-secondary">3<span class="visually-hidden">unread messages</span></span>
-                  </a>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 d-flex justify-content-md-end">
-                      <li class="nav-item">
-                        <a class="nav-link active h7 text-gray_custom" aria-current="page" href="#">Signin</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active h7 text-gray_custom" aria-current="page" href="#">Signup</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+              <%- include('./component_ejs/navbar1.ejs') %>
         </div>
       </div>
-            <%- include('banner.ejs') %>
+            <!--banner-->
+            <%- include('./component_ejs/banner.ejs') %>
             <!--navbar-2-->
-            <div class="nav-scroller d-flex align-items-center mb-0 mb-md-16">
-              <nav class="container nav d-flex justify-content-center" aria-label="Secondary navigation">
-                <a class="nav-link active" aria-current="page" href="#">音樂</a>
-                <a class="nav-link" href="#">戲劇</a>
-                <a class="nav-link" href="./productPage.html">設計</a>
-                <a class="nav-link" href="#">藝術</a>
-                <a class="nav-link" href="#">美食</a>
-                <a class="nav-link" href="#">旅遊</a>
-                <a class="nav-link" href="#">電影</a>
-                <a class="nav-link" href="#">親子</a>
-                <a class="nav-link" href="./productDetailPage.html">期間限定</a>
-              </nav>
-              
-            </div>
-          <!--offcanvas-->
-          <div class="offcanvas offcanvas-end bg-black" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header ">
-              <h5 class="text-white h1 fw-bold" id="offcanvasRightLabel">Cart List</h5>
-              <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <ul class="offcanvas-body customscrollbar list-unstyled">
-                <li class="card rounded-2 list-unstyled pt-1 mb-3 mb-md-5" style="width: 100%;">
-                  <button type="button" class="btn-close ms-1" aria-label="Close"></button>
-                  <div class="card-body ms-7 d-flex">
-                      <div class="ratio ratio-1x1" style="width: 120px;">
-                      <img  src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
-                      </div>
-                      <div class="d-flex flex-column me-0 ms-7 me-md-13">
-                          <h7 class="fw-bold">2020 台味設計展</h7>
-                          <h7>01 JUN — 31 OCT</h7>
-                          <span class="h7 text-gray_custom">全票</span><span class="fw-bold h5">NT$350</span>
-                      </div>
-                      <div class="h9 fw-bold flex-grow-1 d-flex flex-column-reverse justify-content-center  align-items-center ms-11 gap-1 flex-sm-row   gap-sm-5">  <a class="btn p-0 link-dark number_chose" role="button" href="#"><i class="bi bi-dash-lg"></i></a>01 <a  class=" btn p-0 link-dark number_chose"href="#"><i class="bi bi-plus-lg"></i></a></div>
-                  </div>
-                </li>
-                <li class="card rounded-2 list-unstyled pt-1 mb-3 mb-md-5" style="width: 100%;">
-                    <button type="button" class="btn-close ms-1" aria-label="Close"></button>
-                    <div class="card-body ms-7 d-flex">
-                        <div class="ratio ratio-1x1" style="width: 120px;">
-                        <img  src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
-                        </div>
-                        <div class="d-flex flex-column me-0 ms-7 me-md-13">
-                            <h7 class="fw-bold">No.22 線上設計展</h7>
-                            <h7>01 JUN — 31 OCT</h7>
-                            <span class="h7 text-gray_custom">全票</span><span class="fw-bold h5">NT$350</span>
-                        </div>
-                        <div class="h9 fw-bold flex-grow-1 d-flex flex-column-reverse justify-content-center  align-items-center ms-11 gap-1 flex-sm-row   gap-sm-5">  <a class="btn p-0 link-dark number_chose" role="button" href="#"><i class="bi bi-dash-lg"></i></a>01 <a  class=" btn p-0 link-dark number_chose"href="#"><i class="bi bi-plus-lg"></i></a></div>
-                    </div>
-                </li>
-                <li class="card rounded-2 list-unstyled pt-1 mb-3 mb-md-5" style="width: 100%;">
-                    <button type="button" class="btn-close ms-1" aria-label="Close"></button>
-                    <div class="card-body ms-7 d-flex">
-                        <div class="ratio ratio-1x1" style="width: 120px;">
-                        <img  src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
-                        </div>
-                        <div class="d-flex flex-column me-0 ms-7 me-md-13">
-                            <h7 class="fw-bold">高雄設計節</h7>
-                            <h7>01 JUN — 31 OCT</h7>
-                            <span class="h7 text-gray_custom">全票</span><span class="fw-bold h5">NT$350</span>
-                        </div>
-                        <div class="h9 fw-bold flex-grow-1 d-flex flex-column-reverse justify-content-center  align-items-center ms-11 gap-1 flex-sm-row   gap-sm-5">  <a class="btn p-0 link-dark number_chose" role="button" href="#"><i class="bi bi-dash-lg"></i></a>01 <a  class=" btn p-0 link-dark number_chose"href="#"><i class="bi bi-plus-lg"></i></a></div>
-                    </div>
-                </li>
-            </ul>
-            <!--小計-->
-            <div class="offcanvas-footer d-flex justify-content-between">
-              <div class="fromGroup">
-                <h9 class="text-white me-11">小計</h9>
-                <span class="text-white">NT$1050</span> 
-            </div>
-            <!--結帳按鈕-->
-            <a href="./checkOut-1Page.html" class="btn btn-outline-primary bg-white" role="button">前往結帳</a>
-            </div>
-          </div>
+            <%- include('./component_ejs/navbar2.ejs') %>
+            
+          <!--card-->
+          <%- include('./component_ejs/cart.ejs') %>
         <%- contents %>
         <div class="footer">
           <!--猜你也喜歡-->
           <div class="container-md <%- display %>">
               <div class="row">
-                <div class="h1 fw-bold col-9 pb-11 pt-0 col-sm-6 pt-md-15 col-md-4">
+                <div class="h1 fw-bold col-9 pb-11 pt-0 col-sm-6 pt-md-15 col-md-4" data-aos="fade-up">
                     猜你也喜歡...
                 </div>
             </div>
-            <div class="row">
-                <div class=" col-12 offset-md-1 col-md-11">
-                <div class="swiper-container mySwiper p-0 pb-md-17 ">
-                    <div class="swiper-wrapper ">
-                      <a class="swiper-slide link-dark" href="#" >
-                        <div class="card w-100">
-                          <div class="ratio ratio-1x1">
-                            <img src="./assets/images/swiper1.jpg" alt="picture">
-                          </div>
-                          <div class="carbody d-flex flex-column align-items-start">
-                            <h5 class="py-1">No.22 線上設計展</h5>
-                            <span class="pb-5">$350</span>
-                          </div>
-                        </div>
-                      </a>
-                      <a class="swiper-slide  link-dark" href="#" >
-                        <div class="card w-100">
-                          <div class="ratio ratio-1x1">
-                            <img src="./assets/images/swiper2.jpg" alt="picture">
-                          </div>
-                          <div class="carbody d-flex flex-column align-items-start">
-                            <h5 class="py-1">No.22 線上設計展</h5>
-                            <span class="pb-5">$350</span>
-                          </div>
-                        </div>
-                      </a>
-                      <a class="swiper-slide  link-dark" href="#" >
-                        <div class="card w-100">
-                          <div class="ratio ratio-1x1">
-                            <img src="./assets/images/swiper3.jpg" alt="picture">
-                          </div>
-                          <div class="carbody d-flex flex-column align-items-start">
-                            <h5 class="py-1">No.22 線上設計展</h5>
-                            <span class="pb-5">$350</span>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                      <div class="swiper-pagination-hidden"></div>
-                </div>
-                </div>
-            </div>
+            <!--swiper-->
+            <%- include('./component_ejs/swiper.ejs') %>
           </div>
           <!--想收到最新消息嗎?-->
-          <div class="footer_banner d-flex flex-column justify-content-end <%- display %>" style="background: url(./assets/images/footer_banner.jpg) center;background-size: cover;">
+          <div class="footer_banner d-flex flex-column justify-content-end <%- display %>" data-aos="fade-up" style="background: url(./assets/images/footer_banner.jpg) center;background-size: cover;">
               <div class="container-md ">
                   <div class="row pb-md-10 pb-lg-5">
                     <div class="h1 text-white col-12">
@@ -195,7 +64,7 @@
               </div>
           </div>
           <!--footer底部bar-->
-          <div class="container-md position-relative">
+          <div class="container-md position-relative" data-aos="fade-up">
             <div class="d-flex justify-content-between  py-7 py-md-12">
               <div class="fromGroup d-flex align-items-center gap-7">
                 <div class="  h3-md h4  mb-0">EXHIBINECTION</div>
@@ -208,11 +77,36 @@
             </div>
           </div>
         </div>
+<!--載入套件-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-    
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
 </body>
 </html>
 

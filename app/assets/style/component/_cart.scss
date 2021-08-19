@@ -1,0 +1,23 @@
+//offcanvas客製化
+.offcanvas{
+    width: 100%;
+    //斷點在md以上時的寬與位置
+    @include media-breakpoint-up(md) {
+        top: 8%;
+        height: 85%;
+        max-width: 540px;
+    }
+}
+//新增offcanvas-footer
+.offcanvas-footer{
+    padding: 0 15px;
+    margin-bottom: 24px;
+}
+
+ //結帳按鈕
+ .btn.btn-outline-primary.bg-white{
+    &:hover,&:focus{
+        color: $secondary;
+        border: 1px solid $secondary;
+    }
+}

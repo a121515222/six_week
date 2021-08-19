@@ -15,12 +15,13 @@ img{
 }
 body{
     font-family: 'Roboto','Noto_CJK',sans-serif;
+    
+}
+//body與offcanvas的scrollbr
+body,.scrollbarstyle{
     &::-webkit-scrollbar{
         width: 10px;
     }
-}
-//body與offcancas的scrollbr
-body,.customscrollbar{
     //利用background-clip: padding-box;與border的透明調整 thumb 與 track粗細
     &::-webkit-scrollbar-track,&::-webkit-scrollbar-thumb {
 	border: 3px solid rgba(255,255,255,0);
@@ -37,5 +38,17 @@ body,.customscrollbar{
     &::-webkit-scrollbar-track{
         background-color: $gray-300;
         border-radius: 10px;
+    }
+}
+//+-hover,focus效果
+.number_chose{
+    &:hover,&:focus{
+        color: $secondary;
+        }
+    }
+//清除focus效果
+.focus-clean{
+     &:focus{
+         box-shadow: none;
     }
 }

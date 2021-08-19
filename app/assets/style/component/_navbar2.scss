@@ -1,0 +1,22 @@
+.nav-scroller {
+    height: 3.25rem; /* 隱藏下方捲軸 */
+    overflow-y: hidden; 
+    border-bottom: 1px solid $gray_custom;
+    .nav-link{
+        font-size: $h7-font-size;
+        color: $gray_custom;
+        &:hover,&:focus{
+            color: $secondary;
+            box-shadow: inset 0 -1px 0 $secondary;
+        }
+    }
+}
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:auto;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+//navbar1斷點客製化
+@include media-breakpoint-up(md) {
+    .position-md-absolute {
+      position: absolute;
+    }
+    .translate-md-middle {
+      transform: translate(-50%, -50%);
+    }
+  }
